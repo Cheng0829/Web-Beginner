@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            /*margin就是边距,即元素四周的间距,由于某些格式会自动给元素加边距,所以通常需要先设为0.*/
+            /*也可以单独用margin-top/right/bottom/left设置四条边的边距*/
+        }
+        #box{
+            overflow: auto;/*自动被子元素撑满*/
+            width:600px;
+            margin: auto;/*自动设置边距,也就是让两边边距自动相等,父元素自然也就居中显示了*/
+        }
+        .item{
+            width:144px;
+            height:144px;
+            float:left;
+            margin:20px;
+            padding: 15px;
+            background-position: center center;/*正中心*/
+            border: 5px solid red;
+            /*
+            border-width/style/color和background一样可以简写,如:border: 5px solid red;
+            */
+        }
+        .item img{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item" style="background:url(../img/bizhi1.png);background-repeat:no-repeat"><br>123456798</div>
+        <div class="item" style="background:url(../img/bizhi2.png);background-repeat:no-repeat"><br>123456798</div>
+        <div class="item" style="background:url(../img/bizhi3.png);background-repeat:no-repeat"><br>123456798</div>
+    </div>
+
+</body>
+</html>

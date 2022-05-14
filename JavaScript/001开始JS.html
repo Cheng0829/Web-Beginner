@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ><!--body事件:onLoad在页面装载完成还未显示时要做的事情;onUnload在页面关闭之前要做的事情-->
+    
+        <img name="mama" src="mama.jpg">
+        <p id="p1" name="dancing">一个段落</p>
+<!--document成员:anchors,forms,images,cookie,title,bg/fg/link/alink/vlinkColor-->
+  <script>
+      
+        let images = new Array(6);
+        let index = 1;
+        for(let i=0; i<6; i++){
+            images[i] = new Image();
+            images[i].src = i+".jpg";
+        }
+        function show(){
+            document.anm.src = images[index].src;
+            index = (inex+i)%6;
+        }
+        //然后<body onLoad="setInterval('show()',200);"
+        /*image对象的src可以赋值以装入新的图片,可以创建Image()对象来提前装载图片,onLoad事件表明图片装载完成*/
+      
+      alert(document.images[0].src);//document.images[0]获取图片, .src获取路径
+      alert(document.getElementById("p1"));//获取id
+      //alert(document.height);
+      // <body onLoad='setInterval("update()",1000)'> 设置定时器,1000ms后执行update函数
+      var countt=10;
+      function update(){
+          if(countt>0)
+          status=count--;
+      }
+  </script>
+  <!--<p onMouseOver="alert('hi');">666</p>-->
+  <!--<p onMouseOut="alert('hi');">666</p>-->
+  <p onMouseOver="status='in';" onMouseOver="status='out';">777</p>
+</body>
+<script>
+//js代码装在script标签内,或者淡出放在.js文件中,然后<script src="XXX.js"></ script>
+
+    // 多行注释,//单行注释
+    // JS中'和"通用
+    //"<br>"表示换行符
+    // let表示要创建定义一个变量(var也可以,但是var定义的for循环局部变量在循环外仍然有用,存在冲突隐患)
+    // typeof用于判断变量类型(number/string/boolean/underfined/object/function)
+    // 按住F12->console,可以输入typeof result查看变量类型
+    // 类型转换:let a = 5 -*/% "4" 均可得到5 -*/% 4 的结果(JS先把"4"转化为4),但如果是5+"4",结果为"54"
+    // 显示类型转换: let a = Number(a)
+    // 取整: (XXX).toFixed()把XXX转换为整数(只保留整数部分,去一法)
+    // 自增:++a,a++,a+=1
+    // 逻辑运算:与&&,或||,非!
+    // function fun_name(parameter){}
+    // let mark = new Array(size); let mark=new Array(a1,a2,...); let mark=[a1,a2,...];
+    // JS数组可以动态增长:let mark = new Array();mark[0]=1;mark[1]=2;
+    // 数组长度:mark.length
+    /*
+        对象是JavaScript的一种复合数据类型，它可以把多个数据集中在一个变量中，并且给其中的每个数据起名字
+        或者说，对象是一个属性集合，每个属性有自己的名字和值    
+        JavaScript并不像其他OOP语言那样有类的概念，不是先设计类再制造对象*/
+    /*
+        创建对象:
+        //let book = new Object();
+        let book = {title:"HTML5",writer:"Tom"};
+        book.translator = "Mary";
+        book.chapter = new Object(); // 可以随时构造定义时不存在的属性
+        book.chapter.title = "Introduction_HTML5"
+        访问对象属性值:
+        document.write(book.writer); // 或document.write(book[writer]);
+        删除对象属性:
+        delete book.chapter.title; // 或 book.chapter.title = null;
+        遍历所有属性及值:
+        for (let x in book){
+            document.write("属性名:"+x+", 属性值:"+book[x]+"<br>");
+        }
+    */
+   /*
+    构造方法:
+        1.不直接制造对象
+        2.通过this来定义成员
+        3.没有return
+        function Rect(w,h){
+            this.width = w; 
+            this.height = h;
+            this.area = function(){ return this.width * this.height;};
+        }
+        var r = new Rect(5,10); alert(r.area());
+   */
+   //alert弹窗用于提醒;confirm弹窗让用户选择,返回布尔值,prompt弹出文本框让用户输入文本
+    
+    /*
+        HTML中的JS:
+        1.在<script>标记中
+        2.在<script>的src属性或archive指定的外部文件中
+            3.在某个HTML标记的事件处理器(比如鼠标点击)中:<p onMouseOver="alert('hi');">XXX</ p>
+    */
+    //外部JS文件:<script src=".js文件路径"></ script>,一个纯粹的代码文件,没有HTML标记,相当于C语言的头文件   
+    /*
+        w=window.open("new.html",new_name,"width=400,height=400,status=yes,resizable=yes")//打开新窗口;
+        w.close()//关闭;
+        w.moveTo(left,top);//移动窗口
+        w.location代表当前URL(和定时器setInterval搭配可实现跳转功能)
+    */
+    document.write("<button>6666666</button>");
+    document.write("<h4>6666666</h4>");
+    let wage = 15;
+    let housing_rental = 15/7;
+    document.write(housing_rental)//主页面输出,document代表整个网页
+
+    let result = wage - housing_rental;
+    console.log(typeof result);//输出到console控制台
+
+    if_else = "if-else";
+    if(result>=10)
+        document.write(if_else+1+"<br>");
+    else if(result==19){
+        document.write(if_else+2);
+        alert('hi');//弹窗警告
+    }else
+        document.write(if_else+3);
+    
+    let week = 3;
+    switch(week){
+        case 1: document.write("星期1");break
+        case 2: document.write("星期2");break
+        default:document.write("default<br/>");
+    }
+    
+    while(week>9){
+        document.write("week="+week);
+        week++;
+        break;
+    }
+    
+    for(let i=4; i<4; i++){
+        document.write("i="+i);
+        break
+    }
+    
+    do {
+        document.write("");
+        break;
+    } while (2<1);
+
+    let add = new Function("a","b","return a+b");
+    // 函数变量:上下等价
+    function adddd(a,b)
+    {
+        //alert("a+b="+(a+b));
+        return a+b;
+    }
+    document.write(add(1,2)+"<br>");
+
+    let mark = new Array();
+    mark[0]=1;
+    mark[1]=2;
+    mark[2]=5;
+    mark.length=2;//使mark数组截断其他元素,只保留前2个元素
+    let mark_string = mark.toString(); //转换为字符串
+    let mark_join = mark.join("*");//用*连接,转换为字符串
+
+    //堆栈操作
+    let count = mark.push("hi","hello");//mark->[1,2,hi,hello],count为栈顶元素的序号+1
+    let pop_item = mark.pop();//弹出栈顶元素hello
+    document.write(pop_item+"<br>");
+
+    //队列操作
+    let shift_item = mark.shift();
+    document.write(shift_item+"<br>");//弹出队首元素1
+
+    let circle = {title:"HTML5",writer:"Tom",radius:2};
+    circle.chapter = 1;
+    for (let x in circle){
+        document.write(x+" ");
+    }
+
+    
+</script>  
+
+</html>

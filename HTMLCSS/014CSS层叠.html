@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--本样式的竖线可以用最笨的办法挨个加|,但是太麻烦-->
+    <!--新方法:给各个item加上边框,让各个边框相接,然后只保留右边框-->
+    <!--边框样式有三种:border:solid实线,dashed虚横线,dotted虚点线-->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #navigation{
+            text-align: center;
+        }
+        #navigation .last{
+            text-decoration: none;
+            border: none;
+        }
+        .item{
+            text-decoration: none;
+            border-right: solid 2px #808080;
+            padding: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <a href="" class="item">1</a>
+        <a href="" class="item">2</a>
+        <a href="" class="item">3</a>
+        <a href="" class="item">4</a>
+        <a href="" class="item">5</a>
+        <a href="" class="item last">6</a>
+        <!--第6个同时被.item和#navigation .last修饰-->
+    </div>
+</body>
+</html>

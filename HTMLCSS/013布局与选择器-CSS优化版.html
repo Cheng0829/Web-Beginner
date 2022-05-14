@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #navigation {
+            height: 80px;line-height: 80px;text-align: center;
+        }
+        #bottom {
+            height: 40px;line-height: 40px;text-align: center;background-color: #666;
+        }
+        .nav {
+            margin: 0 15px;text-decoration: none;
+        }
+        #banner img {
+            width:100%
+        }
+        
+    </style>
+</head>
+<!--
+    #name表示对id为name的布局统一设置样式
+    .nav表示对class类统一设置样式
+    #banner img表明只针对banner下top.png图片
+    text-decoration:none即去掉所有修饰(下划线删除线之类的)
+-->
+<!--写在标签上的叫做行内样式,卸载style上的叫做CSS内部样式-->
+<body style="margin:0">
+    <!--可用div来标记布局,一个空div默认宽度为00%,高度为0.-->
+    <!--banner:横幅-->
+    <div id="banner">
+        <img src="img/top.png" >
+    </div>
+    <div id="navigation">
+        <!--line-height是行高,设为与容器高一样,可以使文字垂直居中-->
+        <a href="#" class="nav">我的资源</a>
+        <a href="#" class="nav">我的应用数据</a>
+        <a href="#" class="nav">其他</a>
+    </div>
+    <div id="bottom">
+        版权所有: Chinese Enterprise
+    </div>
+</body>
+<!--写在标签上的叫做行内样式,卸载style上的叫做CSS内部样式-->
+</html>

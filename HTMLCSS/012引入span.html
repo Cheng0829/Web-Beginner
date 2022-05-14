@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p style="text-align: center;background-color: gray;color: red;font-size: 40px;">
+        第一段
+    </p>
+    <!--span是一个容器标签,本身没有任何特殊功能,只用来报过一段文本,便于给文本增加样式-->
+    <p style="text-align: center">
+        <!--和<p align="center">效果一样-->
+        <span style="background-color: gray;color: red;font-size: 40px;">
+            第一段
+        </span>
+
+    </p>
+    <p align="center">
+        <b>第二段1,</b>第二段2,
+        <span style="color:#41A863;">
+            第二段3,
+        </span>第二端4
+    </p>
+    <!--div是一个容器标签,本身没有任何特殊功能,与span相对,可用来包裹任何内容,也可以容器之间互相包裹-->
+    <!--用div进行批量操作,否则需要挨个对p进行操作-->
+    <div style="color:#41A863;margin: auto;width: 500px;">
+        <!--text-align:center是让内部元素水平居中,而margin:auto让元素本身水平居中(这里是让容器本身居中,如果容器太大盛满整个页面,居中会无效,所以需要设置宽度)-->
+        <p>
+            第三段
+        </p>
+        <p>
+            第四段
+        </p>
+    </div>
+
+</body>
+
+</html>

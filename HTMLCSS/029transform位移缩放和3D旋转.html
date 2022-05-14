@@ -1,0 +1,15 @@
+li:nth-child(2){
+    position: relative;
+    left: 40px;
+    transition:1s 0.1s;
+}
+<!--上下两种等价,都可用来与hover结合,使元素移动-->
+li:nth-child(2){
+    transform:translateX(40px);
+    transition:1s 0.1s;
+}
+transform:scale(1.5);<!--放大为原来的1.5倍,原点始终为图片中心-->
+transform-origin:50% 50%;<!--50% 50%代表图片正中心,当然也可用像素表示-->
+<!--rotateX/Y/Z旋转,括号内是旋转度数,perspective是观察距离,满足近大远小才能真正有旋转效果-->
+transform:perspective(1000px) rotateX(30deg);
+<!--可以用perspective-origin改变观察视角-->

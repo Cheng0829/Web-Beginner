@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <form action="https://www.baidu.com">
+        <!--action是表单数据提交的地址-->
+        <table width="600px" border="1px" cellapcing="0">
+            <tbody>
+                <tr height="40px">
+                    <td rowspan="4" align="center" style="color:red">总体信息</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr height="40px">
+                    <td align="center">用户名:</td>
+                    <td>
+                        <input type="text" name="loginname">
+                    </td>
+                </tr>
+                <tr height="40px">
+                    <td align="center">密码:</td>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                </tr>
+                <tr height="40px">
+                    <td colspan="2" align="center">
+                        <input type="submit" value="提交" style="background-color: darkgreen;width:80px;height:30px">
+                        <!--type为submit,点击按钮就会把表单提交到<form action="https://www.baidu.com">中的百度地址,页面也会跳转到百度页面-->
+                        <!--点击提交后,跳转到百度网址可以看到在网址后有loginname=,pwd=,这就说明提交成功了.-->
+                        <input type="reset" value="重置" style="background-color:#666666">
+                        <!--如果type="button",那就只是一个外观性按钮,没有实际用途-->
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

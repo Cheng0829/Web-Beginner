@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        width: 800px;
+        margin:100px auto;
+    }
+    section article{
+        float: left;
+        width: 200px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    #text-a{
+        background: #373334;
+    }
+    #text-b{
+        background: #cbd7d2;
+    }    
+    #text-c{
+        background: #f3f2f0;
+    }
+    #text-d{
+        background: #d74339;
+    }
+    h1{
+        margin: 10px 10px 5px 50px;
+    }
+    p{
+        margin: 12px 50px;
+    }
+    section:hover article{
+        width:50px
+    }
+    /*上下两个设置权重一样,所以下面的刚覆盖上面的,所以当鼠标滑动到某一模块时会覆盖其他的*/
+    section article:hover{
+        width:650px;
+        overflow: auto;
+    }
+</style>
+<body>
+    <section>
+        <article id="text-a">
+            <h1>Knowledge</h1>
+            <p>
+                overflow:hidden;使超出容器大小的文本或图片部分不可见
+                overflow:auto;使超出容器大小的文本或图片部分可以自动使用滚动条(也可以只设置overflow-x或-y)
+            </p>
+        </article>        
+        <article id="text-b">
+            <h1>Knowledge</h1>
+            <p>
+                overflow:hidden;使超出容器大小的文本或图片部分不可见
+                overflow:auto;使超出容器大小的文本或图片部分可以自动使用滚动条(也可以只设置overflow-x或-y)
+            </p>
+        </article>        
+        <article id="text-c">
+            <h1>Knowledge</h1>
+            <p>
+                overflow:hidden;使超出容器大小的文本或图片部分不可见
+                overflow:auto;使超出容器大小的文本或图片部分可以自动使用滚动条(也可以只设置overflow-x或-y)
+            </p>
+        </article>        
+        <article id="text-d">
+            <h1>Knowledge</h1>
+            <p>
+                overflow:hidden;使超出容器大小的文本或图片部分不可见
+                overflow:auto;使超出容器大小的文本或图片部分可以自动使用滚动条(也可以只设置overflow-x或-y)
+            </p>
+        </article>
+    </section>
+        
+    
+</body>
+</html>

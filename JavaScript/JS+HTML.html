@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>添加 HTML</title>
+		<script type="text/javascript" src=""></script>
+		<style>
+			#one {
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				border: solid 2px red;
+			}
+			
+			#three {
+				width: 100px;
+				height: 100px;
+				margin: 48px auto;
+				border: solid 2px black;
+				text-align: center;
+				line-height: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="one"></div>
+		<script>
+			var a = "two";
+
+			var html = '<div id="three" title="' + a + '">忆林</div>';
+
+			$("#one").append(html);
+
+			var b = $("#three").attr("title");
+
+			console.log("b = " + b);
+		</script>
+	</body>
+
+</html>

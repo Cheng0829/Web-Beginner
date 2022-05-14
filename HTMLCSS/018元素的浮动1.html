@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    <title>Document</title>
+</head>
+<style>
+    .green{
+        width:100px;
+        height:100px;
+        background-color:green;
+        float:left;/*左浮动元素*/
+    }
+    .red{
+        width:200px;
+        height:150px;
+        background-color:red;
+    }
+    .a{
+        width:200px;
+        background: green;
+    }
+    .b{
+        width:700px;
+        background: red;
+    }
+    .c{
+        width:300px;
+        background: blue;
+    }
+    .a,.b,.c{
+        float: left; 
+        height:200px;
+    }
+</style>
+<body>
+    <p>文字环绕效果</p>
+    <div class="green"></div>
+    <div class="red">
+        文字环绕效果文字环绕效果文字环绕效果文字环绕效果文字环绕效果文字环绕效果文字环绕效果文字环绕效果文字环绕效果
+    </div>
+    <p></p>    
+    <div class="green"></div>
+    <div class="red">
+        123456789123456789123456789123456789123456789123456789123456789123456789
+    </div>
+    <p></p> 
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</body>
+<!--
+浮动元素会脱离原来位置(文档流),与其他元素发生重叠,但是不会与文字和图片(特殊的文字)内容发生重叠,
+也不会覆盖表单元素(输入框,按钮,选择框) ---》》》 利用此特点可以制作文字环绕效果和元素的横向排版   
+-->
+</html>

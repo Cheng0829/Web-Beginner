@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29570350",
+      "name": "每日答题",
+      "font_class": "meiridati",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "29570351",
+      "name": "文库",
+      "font_class": "wenku",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "29570353",
+      "name": "用户量",
+      "font_class": "yonghuliang",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "29570354",
+      "name": "学习计划时间",
+      "font_class": "xuexijihuashijian",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    }
+  ]
+}

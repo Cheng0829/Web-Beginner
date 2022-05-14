@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .a {
+        width: 20%;
+        background: orange;
+    }
+
+    .b {
+        width: 60%;
+        background: green;
+    }
+
+    .c {
+        width: 20%;
+        background: blue;
+    }
+
+    .a,.b,.c {
+        float: left;
+        height: 200px;
+    }
+
+    .hh {
+        height: 360px;
+        background-color: #222222;
+    }
+    .outer{
+        height:200px;
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <!--父元素把abc包裹起来,这样abc只在内部浮动,不会遮盖hh-->
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+    <div class="hh"></div>
+</body>
+<!--
+父元素在子元素无浮动时,可以不设置高度,其高度自动被子元素撑开,但如果子元素浮动,
+那么需要clear:left/right/both,或者overflow:auto(溢出,自动撑开)  
+-->
+<!--浮动元素在排列时,只参考前一个元素的位置-->
+<!--右浮动时,最先编写的元素会先到右边,最后看上去整个网页的顺序就和编写顺序相反-->
+
+</html>

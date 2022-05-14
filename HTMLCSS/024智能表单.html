@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Table</title>
+</head>
+<style>
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    form{
+        width:350px;
+        background: #9CBC2B;
+        margin:20px auto;
+        padding: 0 15px;
+        color: #364411;
+        border-radius: 5px;
+    }
+    .step{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .form-line{
+        border-radius: 5px;
+        border-color: #F0F5DF;
+        border-width: 2px;
+        border-style: solid;
+        padding: 3px;
+        margin: 3px 0;
+        background-color: #cede95;
+        font-size:12px;
+        padding-left: 10px;
+    }
+    .form-line span{
+        display: inline-block;
+        width: 110px;
+    }
+    .form-line input{
+        background: white;
+        border: none;
+        height: 20px;
+        border-radius: 3px;
+        width: 180px;
+    }
+    .form-line input[type=radio]{
+        width:25px;
+        height: 12px;
+    }
+    .form-line textarea{
+        /*
+        textarea右下角的按钮可以调节大小,如果不希望有这个按钮,
+        可以设置resize:none,只向某一方向调整则为vertical/horizontal,
+        cursor表示光标,pointer表示指针,所以cursor: pointer可使鼠标滑动到
+        按钮上时,鼠标图案变成小手
+        */
+        resize:horizontal;
+        cursor: pointer;
+        width: 180px;
+        height: 70px;
+        vertical-align: top;
+        border: none;
+        border-radius: 3px;
+    }
+    input.submit-btn{
+        border: none;
+        background-color: #374313;
+        color:white;/*文字颜色*/
+        display: block;
+        width: 100px;
+        padding: 5px 0;
+        border-radius: 20px;
+        margin: 10px auto;
+    }
+</style>
+<body>
+    <form action="">
+        <section>
+            <p class="step">第一步,详细信息</p>
+            <p class="form-line">
+                <span>姓名</span>
+                <input type="text" placeholder="请输入姓名">
+            </p>
+            <p class="form-line">
+                <span>facebook主页</span>
+                <input type="url">
+            </p>
+        </section>
+        <section>
+            <p class="step">第二步,收货地址</p>
+            <p class="form-line">
+                <span>详细地址</span>
+                <textarea placeholder="请输入地址"></textarea>
+            </p>
+            <p class="form-line">
+                <span>邮编</span>
+                <input type="text">
+            </p>
+        </section>
+        <section>
+            <p class="step">第三步,银行卡信息</p>
+            <p class="form-line">
+                <span>银行卡类型</span>
+                <input type="radio" name="CardType">借记卡
+                <input type="radio" name="CardType">信用卡
+                <input type="radio" name="CardType">VISA卡
+            </p>
+            <p class="form-line">
+                <span>卡号</span>
+                <input type="number">
+            </p>            
+            <p class="form-line">
+                <span>密码</span>
+                <input type="password">
+            </p>
+            <p class="form-line">
+                <span>持卡人</span>
+                <input type="text">
+            </p>
+            <p>
+                <input type="submit" class="submit-btn" value="提交">
+            </p>
+        </section>
+    </form>
+</body>
+<!--<input type="email/url/number" placeholder="文字提示">,
+    浏览器会自动检查输入框输入的信息是否符合要求-->
+<!--text是单行文本输入,textarea是多行文本输入-->
+<!--属性border-radius是图形的圆角半径-->
+</html>

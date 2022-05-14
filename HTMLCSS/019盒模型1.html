@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            /*margin就是边距,即元素四周的间距,由于某些格式会自动给元素加边距,所以通常需要先设为0.*/
+            /*也可以单独用margin-top/right/bottom/left设置四条边的边距*/
+            /*边距margin属性也可以简写:margin:上边距 右边距 下边距 左边距(顺时针) */
+            /*填充padding和margin一样*/
+        }
+        .item{
+            width:144px;
+            height:144px;
+            float:left;
+            margin:20px;
+            
+        }
+        #box{
+            overflow: auto;
+            width:600px;
+            margin: auto;/*自动设置边距,也就是让两边边距自动相等,父元素自然也就居中显示了*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item"  style="background:url(../img/bizhi1.png)"></div>
+        <div class="item"  style="background:url(../img/bizhi2.png)"></div>
+        <div class="item"  style="background:url(../img/bizhi3.png)"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        margin:0;
+        height:100%;
+        /*html对整个网页进行设置*/
+    }
+    body{
+        margin:0;
+        height:100%;
+        background-image: url(../icon.png);
+        background-repeat: no-repeat;/*如果不加no-repeat,图片会自动平铺(向周围扩散)*/
+        background-position: center center;/*正中心*/
+    }   
+</style>
+<body>
+    
+</body>
+<!--
+元素宽高的百分比是相对于父元素而言的,若父元素高度为0,则子元素高度即使设置为100%,大小也是0,html元素大小是相对于浏览器窗口而言的
+-->
+<!--
+简写:background-color/image/repeat等可以简写:
+background: gray url(XXX/XXX.png) no-repeat
+background: gray 
+不需要把属性名完整写出
+-->
+</html>

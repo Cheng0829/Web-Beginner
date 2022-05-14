@@ -1,0 +1,68 @@
+<!--表单负责把数据提交给服务器-->
+<!--文本/密码输入框,提交按钮都需要包裹在form标签里-->
+<!--input标签编写表单控件-->
+<!--
+    <input type="XXX" value="按钮文字">
+    text:文本输入框
+    password:密码输入框
+    button:按钮
+    radio:单选框
+    chockbox:复选框
+    ......
+-->
+<!--
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+tr*4>td*3,Tab快捷键
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <form action="https://www.baidu.com">
+        <!--action是表单数据提交的地址-->
+        <table width="600px" border="1px" cellapcing="0">
+            <tbody>
+                <tr height="40px">
+                    <td rowspan="4" align="center">总体信息</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr height="40px">
+                    <td align="center">用户名:</td>
+                    <td>
+                        <input type="text" name="loginname">
+                    </td>
+                </tr>
+                <tr height="40px">
+                    <td align="center">密码:</td>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                </tr>
+                <tr height="40px">
+                    <td colspan="2" align="center">
+                        <input type="submit" value="提交">
+                        <!--type为submit,点击按钮就会把表单提交到<form action="https://www.baidu.com">中的百度地址,页面也会跳转到百度页面-->
+                        <!--点击提交后,跳转到百度网址可以看到在网址后有loginname=,pwd=,这就说明提交成功了.-->
+                        <input type="reset" value="重置">
+                        <!--如果type="button",那就只是一个外观性按钮,没有实际用途-->
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

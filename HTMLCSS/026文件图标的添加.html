@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    ul li a{
+        background-image: url(img/9.jpg);
+        background-repeat: no-repeat;
+        padding-right: 20px;
+        background-position-x: right;
+    }
+    ul li a:nth-of-type(1) a{ background-position-y:2px;}
+    ul li a:nth-of-type(2) a{ background-position-y:-40px;}
+    li a[href$='.pptx']{
+        background-position-y: -47px;
+    }
+</style>
+<body>
+    <!-- :nth-of-type(numbers)同级兄弟元素选择器 -->
+    <!--属性选择器href$=".后缀名"-->
+<ul>
+    <li><a href="xxx.docx">word文档</a></li>
+    <li><a href="xxx.xlsx">excel表格</a></li>
+    <li><a href="xxx.pptx">ppt展示</a></li>
+    
+</ul>
+</body>
+<!--CSS重置:text-decoration: none以及margin/padding:0;因为某些标签自带效果,比如:
+p标签自带边距,button标签自带边框,ul列表标签自带列表符号和内边距-->
+<!--
+    XXX:first-child选择第一个XXX元素
+    XXX:nth-of-type(even) 选择序号为偶数的同类型XXX元素
+    XXX:nth-of-type(odd) 选择序号为奇数的同类型XXX元素
+    XXX:nth-child(n) 选择自然排序中序号为n的XXX元素
+-->
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0
+    }
+
+    input[type='checkbox'] {
+        -webkit-appearance: none;/*chrome专用外观*/
+        margin: 50px;
+        border: 10px solid #c1c1c1;
+        border-radius: 50px;
+        width: 150px;
+        height: 70px;
+        background: #888;
+        position: relative;
+        box-shadow: 0 0 10px 1px #3f3f3f inset;
+        transition: 0.6s;
+    }
+    
+    input[type="checkbox"]:checked{
+        /*开关选中时变色*/
+        background: #6fb500;
+    }
+    input[type='checkbox']::after{
+        /*伪元素分类器(没有自己的标签,但是可以和普通元素一样设置样式)*/
+        /*此处指的是开关按钮*/
+        content:"";
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        border-radius: 30px;
+        background: linear-gradient(to bottom,#d3d3d3,#9e9e9e);/*表示线性渐变*/
+        box-shadow: 0 0 10px 1px #eee inset , 2px 1px 2px 0px #333;
+        /*阴影: left值,top值,模糊值,扩大值,影子颜色.阴影方向(内/外),同一元素允许多个阴影效果并存*/
+        transition: 0.6s;
+    }
+    input[type='checkbox']:checked::after{
+        /*当开关被checked时,远离左边95px,即右移*/
+        left:95px;
+    }
+</style>
+
+<body>
+    <input type="checkbox">
+</body>
+
+    <!--transition:2s,则此元素接下来所有变化都会在2s中内完成-->
+    <!--transition:width 2s ease-in 2s ->-->
+    <!--transition:要过渡的属性,过渡时间,过渡方式,延迟时间-->
+    <!--过渡方式:ease先慢后快再慢,linear线性,ease-in慢速开始,easr-out慢速结束,ease-in-out慢速开始慢速结束-->
+
+</html>

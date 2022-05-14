@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--表格用table标签表示,用tr来表示行,每行的若干单元格用td表示-->
+    <h3>this is a table</h3>
+    <!--border表示边界线,cellspacing表示单元格间隙-->
+    <table border="1px" cellspacing="0">
+        <col width="200px">
+        <tr >
+            <!--如果需要每个格子完全一样宽,需要人为设定宽度,要么每个td加width,要么在table下加单标签col-->
+            
+            <!--align表示对齐格式,要么给每个单元格td加align,要么在tr内加-->
+            <td ></td>
+            <td width="50" align="left">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            
+            <td>5</td>
+            <td align="center">6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr align="right">
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+    </table>
+    <table border="1px" cellspacing="0">
+      <thead>
+        表格的页眉
+      </thead>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>123</td>
+          <td>123</td>
+        </tr>
+        表格的主体
+        <!--根据标准,表格共有thead,tbody,tfooter三部分,编写表格时必须有tbody部分,即使我们不添加,浏览器加载时也会自动添加-->
+      </tbody>
+      <tfooter>
+        表格的页脚
+      </tfooter>
+    </table>
+  </body>
+
+</html>
